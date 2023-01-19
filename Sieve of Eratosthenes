@@ -1,3 +1,7 @@
+# Calculates all primes up to a number, n
+# It does this by eliminating multiples of known primes
+# All remaining numbers which haven't been eliminated are thus known to be prime
+
 n = 1000000 # Number to calculate primes up to
 is_prime = [False, False] + [True] * (n - 1) # Generates binary list, indexed to numbers from 0 - n, default is true for all numbers 2 and up.
 for i in range(2, int(n**.5)): # Stops at sqrt(n), as any further numbers would be redundant
